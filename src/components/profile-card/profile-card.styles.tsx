@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import dp from '../../assets/images/profile.png';
 import { appColors } from '../../constants/colors';
-import { Headline_2, Headline_4 } from '../../styles/text.styles';
+import { headline_2, headline_4, headline_6 } from '../../styles/text.styles';
 
 export const CardContainer = styled.div`
   width: 90%;
@@ -15,6 +15,17 @@ export const CardContainer = styled.div`
   color: white;
   box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.4);
   background-color: ${appColors.hoverBlue};
+
+  @media screen and (max-width: 779px) {
+    padding-left: 35px;
+  }
+
+  @media screen and (max-width: 696px) {
+    height: 75%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const ProfileImage = styled.div`
@@ -26,6 +37,20 @@ export const ProfileImage = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(${dp});
+
+  @media screen and (max-width: 779px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (max-width: 696px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 200px;
+    height: 200px;
+  }
 `;
 
 export const Column = styled.div`
@@ -35,33 +60,60 @@ export const Column = styled.div`
   align-items: flex-start;
   justify-content: space-between;
 
-    li{
-    font-size: 32px;
-    margin-right: 23px;
-    cursor: pointer;
-
-    &::last-child{
-        margin-right: 0;
-    }
+  @media screen and (max-width: 696px) {
+    text-align: center;
+    align-items: center;
   }
 `;
 
-export const Name = styled(Headline_2)`
+export const Name = styled.h2`
+  ${headline_2}
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 375px) {
+    ${headline_4}
+  }
 `;
 
-export const Occupation = styled(Headline_4)`
+export const Occupation = styled.h4`
+  ${headline_4}
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 375px) {
+    ${headline_6}
+  }
 `;
 
 export const SocialsRow = styled.ul`
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+  li {
+    font-size: 32px;
+    margin-right: 23px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 696px) {
+    justify-content: space-evenly;
+    min-width: 100%;
+
+    li {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    li {
+      font-size: 26px;
+      margin: 0 5px;
+    }
+  }
+`;

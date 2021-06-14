@@ -29,6 +29,7 @@ const ProfileCard = () => {
           <Name>Jay Gandhi</Name>
           <Occupation>Frontend Developer</Occupation>
         </div>
+
         <SocialsRow>
           <li>
             <FiInstagram onClick={() => openLink(instagramLink)} />
