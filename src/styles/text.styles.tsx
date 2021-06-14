@@ -5,6 +5,12 @@ const fonts = {
     body: 'Raleway'
 }
 
+export const headline_1 = css`
+    font-family: ${fonts.head};
+    font-weight: 700;
+    font-size: 94px;
+`
+
 export const headline_2 = css`
     font-family: ${fonts.head};
     font-weight: 700;

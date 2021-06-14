@@ -11,9 +11,11 @@ export const ResumeIcon = styled.a.attrs((props) => ({
   position: fixed;
   bottom: 14px;
   right: 14px;
+  z-index: 0;
 
   .tool-tip {
     ${button};
+    z-index: 0;
     visibility: hidden;
     text-align: center;
     position: absolute;
@@ -26,18 +28,18 @@ export const ResumeIcon = styled.a.attrs((props) => ({
     border-radius: 5px;
     color: white;
 
-    &::after{
-        content: '';
-        position: absolute;
-        border: 10px solid rgba(0, 0, 0, 0.7);
-        transform: translateY(100%);
-        bottom: 0;
-        left: 65%;
-        border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+    &::after {
+      content: '';
+      position: absolute;
+      border: 10px solid rgba(0, 0, 0, 0.7);
+      transform: translateY(100%);
+      bottom: 0;
+      left: 65%;
+      border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
     }
   }
 
-  &:hover .tool-tip{
-      visibility: visible;
+  &:hover .tool-tip {
+    visibility: visible;
   }
 `;

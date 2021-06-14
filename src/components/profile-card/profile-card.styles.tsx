@@ -4,6 +4,7 @@ import { appColors } from '../../constants/colors';
 import { headline_2, headline_4, headline_6 } from '../../styles/text.styles';
 
 export const CardContainer = styled.div`
+  z-index: 0;
   width: 90%;
   padding-left: 63px;
   max-width: 780px;
@@ -21,6 +22,7 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 696px) {
+    width: 80%;
     height: 75%;
     padding: 20px;
     flex-direction: column;
