@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { headline_1 } from '../../styles/text.styles';
+import { headline_2 } from '../../styles/text.styles';
 
 type folderStyleProps = {
   index: number;
@@ -17,6 +17,7 @@ export const FolderContainer = styled.div<folderStyleProps>`
   left: ${(props) => (props.isOpen ? 0 : 200 * props.index)}px;
   transition: bottom 400ms ease-out, left 400ms ease-out;
   background-color: ${(props) => props.bgColor};
+  color: white;
 
   &:hover {
     ${(props) => (!props.isOpen ? 'bottom: -86vh' : null)};
@@ -54,8 +55,8 @@ export const Flap = styled.div<folderStyleProps>`
   }
 `;
 
-export const Title = styled.div`
-  ${headline_1}
+export const Title = styled.h1`
+  ${headline_2}
   margin: 0;
   padding: 0;
   margin-bottom: 45px;

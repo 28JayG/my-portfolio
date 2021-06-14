@@ -10,23 +10,38 @@ type Props = {
 };
 
 type State = {
-  open: boolean
-}
+  open: boolean;
+};
 
 class Folder extends React.Component<Props> {
-  state={
-    open: false
-  }
+  state = {
+    open: false,
+  };
 
-  toggleOpen = () => this.setState((prevState: State) => ({open: !prevState.open}))
+  toggleOpen = () =>
+    this.setState((prevState: State) => ({ open: !prevState.open }));
 
   render() {
     const { baseColor, index, title, children } = this.props;
     const { open } = this.state;
 
     return (
-      <FolderContainer index={index} isOpen={open} bgColor={baseColor}>
-        <Flap index={index} isOpen={open} bgColor={baseColor} onClick={this.toggleOpen} />
+      <FolderContainer
+        index={index}
+        isOpen={open}
+        bgColor={baseColor}
+        onClick={() => {
+          if(!open){
+            this.toggleOpen()
+          }
+        }}
+      >
+        <Flap
+          index={index}
+          isOpen={open}
+          bgColor={baseColor}
+          onClick={this.toggleOpen}
+        />
         <Title>{title}</Title>
         {children}
       </FolderContainer>
