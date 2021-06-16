@@ -8,5 +8,4 @@ export const AppWrapper = styled.section`
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  overflow: hidden;
 `;

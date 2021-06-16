@@ -8,19 +8,19 @@ type folderStyleProps = {
 };
 
 export const FolderContainer = styled.div<folderStyleProps>`
+  position: fixed;
   z-index: ${(props) => props.index + 1};
-  position: absolute;
   width: 100%;
   height: 90vh;
   padding: 65px 110px;
-  bottom: ${(props) => (props.isOpen ? 0 : '-90vh')};
+  top: ${(props) => (props.isOpen ? '10%' : '100%')};
   left: ${(props) => (props.isOpen ? 0 : 200 * props.index)}px;
-  transition: bottom 400ms ease-out, left 400ms ease-out;
+  transition: top 400ms ease-out, left 400ms ease-out;
   background-color: ${(props) => props.bgColor};
   color: white;
 
   &:hover {
-    ${(props) => (!props.isOpen ? 'bottom: -86vh' : null)};
+    ${(props) => (!props.isOpen ? 'top: 98%' : null)};
   }
 
   @media screen and (max-width: 768px) {

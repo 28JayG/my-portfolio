@@ -27,14 +27,10 @@ class Folder extends React.Component<Props> {
 
     return (
       <FolderContainer
+        id={`folder${index}`}
         index={index}
         isOpen={open}
         bgColor={baseColor}
-        onClick={() => {
-          if(!open){
-            this.toggleOpen()
-          }
-        }}
       >
         <Flap
           index={index}

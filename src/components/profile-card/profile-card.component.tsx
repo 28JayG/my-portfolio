@@ -1,3 +1,6 @@
+import { externalRoutes } from '../../constants/routes';
+import { openLink } from '../../utils/utils';
+
 import {
   FiInstagram,
   FiGithub,
@@ -5,8 +8,6 @@ import {
   FiMessageCircle,
   FiAtSign,
 } from 'react-icons/fi';
-import { externalRoutes } from '../../constants/routes';
-import { openLink } from '../../utils/utils';
 
 import {
   CardContainer,
