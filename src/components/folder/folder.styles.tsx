@@ -9,7 +9,7 @@ type folderStyleProps = {
 
 export const FolderContainer = styled.div<folderStyleProps>`
   position: fixed;
-  z-index: ${(props) => props.index + 1};
+  z-index: ${(props) => (props.isOpen ? 1 : props.index + 2)};
   width: 100%;
   height: 90vh;
   padding: 65px 110px;
