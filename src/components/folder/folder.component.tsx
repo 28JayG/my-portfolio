@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flap, FolderContainer, Title } from './folder.styles';
+import { Flap, FolderContainer } from './folder.styles';
 
 import './folder.styles.tsx';
 
@@ -22,7 +22,7 @@ class Folder extends React.Component<Props> {
     this.setState((prevState: State) => ({ open: !prevState.open }));
 
   render() {
-    const { baseColor, index, title, children } = this.props;
+    const { baseColor, index, children } = this.props;
     const { open } = this.state;
 
     return (
@@ -38,7 +38,6 @@ class Folder extends React.Component<Props> {
           bgColor={baseColor}
           onClick={this.toggleOpen}
         />
-        <Title>{title}</Title>
         {children}
       </FolderContainer>
     );
