@@ -9,8 +9,8 @@ export const ResumeIcon = styled.a.attrs((props) => ({
   opacity: 0.6;
   color: white;
   position: fixed;
-  bottom: 14px;
-  right: 14px;
+  bottom: 25px;
+  left: 25px;
   z-index: 0;
 
   .tool-tip {

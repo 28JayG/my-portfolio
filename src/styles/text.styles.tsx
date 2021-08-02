@@ -1,37 +1,44 @@
 import { css } from 'styled-components'
 
 const fonts = {
-    head: 'Dosis',
-    body: 'Raleway'
+    head: 'Fira Sans',
+    body: 'Raleway',
+    script: 'Satisy',
 }
 
 export const headline_1 = css`
     font-family: ${fonts.head};
-    font-weight: 700;
+    font-weight: 400;
     font-size: 94px;
 `
 
 export const headline_2 = css`
     font-family: ${fonts.head};
-    font-weight: 700;
+    font-weight: 500;
     font-size: 59px;
+`
+
+export const headline_3 = css`
+    font-family: ${fonts.head};
+    font-weight: 500;
+    font-size: 47px;
 `
 
 export const headline_4 = css`
     font-family: ${fonts.head};
-    font-weight: 500;
+    font-weight: 400;
     font-size: 33px;
 `
 
 export const headline_5 = css`
     font-family: ${fonts.head};
-    font-weight: 700;
+    font-weight: 400;
     font-size: 24px;
 `
 
 export const headline_6 = css`
     font-family: ${fonts.head};
-    font-weight: 700;
+    font-weight: 300;
     font-size: 20px;
 `
 
@@ -48,19 +55,19 @@ export const subtitle_2 = css`
 `
 
 export const body_1 = css`
-    font-family: ${fonts.body};
+    font-family: ${fonts.head};
     font-weight: 400;
     font-size: 18px;
 `
 
 export const body_2 = css`
-    font-family: ${fonts.body};
+    font-family: ${fonts.head};
     font-weight: 400;
     font-size: 15px;
 `
 
 export const caption = css`
-    font-family: ${fonts.body};
+    font-family: ${fonts.head};
     font-weight: 400;
     font-size: 13px;
 `
@@ -72,7 +79,17 @@ export const overline = css`
 `
 
 export const button = css`
-    font-family: ${fonts.body};
+    font-family: ${fonts.head};
     font-weight: 500;
     font-size: 15px;
+`
+
+export const script_1 = css`
+    font-family: ${fonts.script};
+    font-size: 94px;
+`
+
+export const script_2 = css`
+    font-family: ${fonts.script};
+    font-size: 59px;
 `
