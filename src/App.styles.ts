@@ -6,6 +6,7 @@ export const AppWrapper = styled.section<{ color?: string }>`
   align-items: flex-start;
   justify-content: flex-start;
   height: 100vh;
+  overflow: hidden;
   width: 100vw;
   max-width: 100%;
   background-color: ${(props) => props.color};

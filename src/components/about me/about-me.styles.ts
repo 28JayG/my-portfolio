@@ -9,4 +9,6 @@ export const Paragraph = styled.p`
   font-family: ${fonts.body};
   font-size: 24px;
   color: white;
+  margin: 0;
+  margin-bottom: 40px;
 `;

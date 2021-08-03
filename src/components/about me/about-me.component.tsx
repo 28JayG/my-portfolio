@@ -15,6 +15,8 @@ const AboutMe = () => {
         rutrum nec hendrerit molestie, venenatis faucibus nunc
       </Paragraph>
       <SkillSet />
+      <SkillSet />
+      <SkillSet />
     </AboutContainer>
   );
 };
