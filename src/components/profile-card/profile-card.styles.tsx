@@ -2,17 +2,16 @@ import styled from 'styled-components';
 import dp from '../../assets/images/profile.png';
 import { headline_3, headline_5 } from '../../styles/text.styles';
 
-export const CardContainer = styled.div`
-  z-index: 0;
+export const CardContainer = styled.div<{ color?: string }>`
   width: 50%;
-  padding-left: 63px;
-  max-width: 585px;
+  padding-left: 38px;
+  width: 585px;
   height: 328px;
   border-radius: 13px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: white;
+  color: ${(props) => props.color};
   box-shadow: 10px 10px 14px -13px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(36px);
   background-image: linear-gradient(

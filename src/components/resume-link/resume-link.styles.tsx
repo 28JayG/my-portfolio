@@ -10,20 +10,20 @@ export const ResumeIcon = styled.a.attrs((props) => ({
   color: white;
   position: fixed;
   bottom: 25px;
-  left: 25px;
+  left: 48px;
   z-index: 0;
 
   .tool-tip {
     ${button};
     z-index: 0;
     visibility: hidden;
-    text-align: center;
+    text-align: right;
     position: absolute;
     padding: 10px;
     width: 120px;
     transform: translate(-50%, -100%);
     top: -10px;
-    left: -10px;
+    left: 120%;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     color: white;
@@ -34,7 +34,7 @@ export const ResumeIcon = styled.a.attrs((props) => ({
       border: 10px solid rgba(0, 0, 0, 0.7);
       transform: translateY(100%);
       bottom: 0;
-      left: 65%;
+      left: 19%;
       border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
     }
   }

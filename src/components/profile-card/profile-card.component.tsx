@@ -1,5 +1,5 @@
 import { externalRoutes } from '../../constants/routes';
-import { openLink } from '../../utils/utils';
+import { openLink, setProfileCardColor } from '../../utils/utils';
 
 import {
   FiInstagram,
@@ -18,12 +18,12 @@ import {
   SocialsRow,
 } from './profile-card.styles';
 
-const ProfileCard = () => {
+const ProfileCard: React.FC<{ location: any }> = ({ location }) => {
   const { instagramLink, githubLink, linkedInLink, whatsappLink, email } =
     externalRoutes;
 
   return (
-    <CardContainer>
+    <CardContainer color={setProfileCardColor(location.pathname)}>
       <ProfileImage />
       <Column>
         <div>

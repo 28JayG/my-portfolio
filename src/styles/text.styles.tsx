@@ -1,9 +1,9 @@
 import { css } from 'styled-components'
 
-const fonts = {
+export const fonts = {
     head: 'Fira Sans',
     body: 'Raleway',
-    script: 'Satisy',
+    script: 'Satisfy',
 }
 
 export const headline_1 = css`
