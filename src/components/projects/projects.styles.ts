@@ -3,7 +3,7 @@ import { appColors } from '../../constants/colors';
 
 export const ProjectsContainer = styled.div`
   overflow-y: scroll;
-  width: 640px;
+   width: 75%;
 
   .p-title {
     position: sticky;

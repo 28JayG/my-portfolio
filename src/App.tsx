@@ -9,6 +9,7 @@ import AboutMe from './components/about me/about-me.component';
 
 import { AppWrapper, Routes, StaticColumn } from './App.styles';
 import { appRoutes } from './constants/routes';
+import Blogs from './components/blogs/blogs.component';
 
 function App({ location }: any) {
   return (
@@ -23,6 +24,7 @@ function App({ location }: any) {
       <Routes>
         <Route path={appRoutes.ABOUT_ME.route} exact component={AboutMe} />
         <Route path={appRoutes.PROJECTS.route} component={Projects} />
+        <Route path={appRoutes.BLOGS.route} component={Blogs} />
       </Routes>
 
       <ResumeLink />

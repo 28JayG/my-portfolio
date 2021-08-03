@@ -1,5 +1,5 @@
 :root {
-  --primary_blue: #001D3D;
+  --primary_blue: #001d3d;
 }
 
 body {
@@ -31,7 +31,19 @@ html {
   box-sizing: inherit;
 }
 
-a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }

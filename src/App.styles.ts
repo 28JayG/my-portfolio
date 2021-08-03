@@ -10,7 +10,7 @@ export const AppWrapper = styled.section<{ color?: string }>`
   width: 100vw;
   max-width: 100%;
   background-color: ${(props) => props.color};
-  transition: background-color 200ms linear;
+  transition: background-color 200ms ease;
 `;
 
 export const StaticColumn = styled.div`
