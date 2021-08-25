@@ -2,17 +2,42 @@ import styled from 'styled-components';
 import { appColors } from '../../constants/colors';
 
 export const ProjectsContainer = styled.div`
-  overflow-y: scroll;
-   width: 75%;
+  width: 100%;
+  background-color: ${appColors.orange};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
 
   .p-title {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 999;
     background-color: ${appColors.orange};
+    text-align: center;
+    width: 100%;
+
+    @media screen and (min-width: 1025px) {
+      text-align: left;
+    }
   }
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media screen and (min-width: 1025px) {
+    background-color: transparent;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1640px) {
+    width: 85%;
+  }
+
+  @media screen and (min-width: 1720px) {
+    width: 75%;
   }
 `;

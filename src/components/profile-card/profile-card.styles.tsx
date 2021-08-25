@@ -3,9 +3,9 @@ import dp from '../../assets/images/profile.png';
 import { headline_3, headline_5 } from '../../styles/text.styles';
 
 export const CardContainer = styled.div<{ color?: string }>`
-  width: 50%;
+  width: 90%;
   padding-left: 38px;
-  width: 585px;
+  max-width: 585px;
   height: 328px;
   border-radius: 13px;
   display: flex;

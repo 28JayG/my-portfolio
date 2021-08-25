@@ -93,3 +93,22 @@ export const script_2 = css`
     font-family: ${fonts.script};
     font-size: 59px;
 `
+export const script_3 = css`
+    font-family: ${fonts.script};
+    font-size: 47px;
+`
+
+export const script_4 = css`
+    font-family: ${fonts.script};
+    font-size: 33px;
+`
+
+export const script_5 = css`
+    font-family: ${fonts.script};
+    font-size: 24px;
+`
+
+export const script_6 = css`
+    font-family: ${fonts.script};
+    font-size: 20px;
+`

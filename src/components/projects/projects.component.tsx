@@ -13,11 +13,12 @@ const Projects = () => {
       <div className='p-title'>
         <PageTitle>Projects</PageTitle>
       </div>
+      
       <Masonry
-        columnCount={2}
-        columnWidth={300}
-        columnGutter={40}
+        columnGutter={10}
+        overscanBy={2}
         items={items}
+        columnWidth={300}
         render={ProjectCard}
       />
     </ProjectsContainer>

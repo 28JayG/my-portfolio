@@ -13,6 +13,14 @@ export const ResumeIcon = styled.a.attrs((props) => ({
   left: 48px;
   z-index: 0;
 
+  @media screen and (max-width: 1024px) {
+    left: 25px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    left: 30px;
+  }
+
   .tool-tip {
     ${button};
     z-index: 0;

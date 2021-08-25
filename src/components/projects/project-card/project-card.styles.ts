@@ -8,11 +8,18 @@ export const ProjectCardContainer = styled.div<{
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: ${appColors.white};
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 10px 10px 13px -13px;
   padding: 15px;
   height: ${({ tall }) => (tall ? '366px' : '305px')};
+
+  @media screen and (max-width: 576px){
+    width: 280px;
+  }
+  @media screen and (max-width: 1024px){
+    margin: 0 auto;
+  }
 `;
 
 export const PCImage = styled.div<{

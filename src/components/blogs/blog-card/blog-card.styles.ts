@@ -7,6 +7,9 @@ export const BlogCardContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 13px -13px;
+  max-width: 625px;
   padding: 20px;
   margin-bottom: 20px;
   height: min-content;
