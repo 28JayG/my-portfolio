@@ -13,6 +13,7 @@ export const SkillSetContainer = styled.div`
     font-size: 36px;
     margin: 0;
     margin-bottom: 5px;
+    padding-left: 5px;
   }
 `;
 

@@ -13,7 +13,6 @@ export const BlogCardContainer = styled.div`
   padding: 20px;
   margin-bottom: 20px;
   height: min-content;
-  background-color: ${appColors.white};
   border-radius: 5px;
   cursor: pointer;
   transition: transform 100ms linear;

@@ -6,9 +6,9 @@ import Projects from '../projects/projects.component';
 const MobileLayout: FC = () => {
   return (
     <>
-      {/* <AboutMe /> */}
-      <Blogs />
+      <AboutMe />
       <Projects />
+      <Blogs />
     </>
   );
 };

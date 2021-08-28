@@ -19,6 +19,10 @@ export const CardContainer = styled.div<{ color?: string }>`
     rgba(255, 255, 255, 0.3) 14.19%,
     rgba(255, 255, 255, 0.18) 100%
   );
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 auto;
+  }
 `;
 
 export const ProfileImage = styled.div`

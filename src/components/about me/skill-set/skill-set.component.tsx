@@ -1,11 +1,15 @@
+import { FC } from 'react';
+import { SkillSetModel } from '../../../models/skillset.model';
 import { SkillSetContainer, SkillLevel } from './skill-set.styles';
 
-const SkillSet = () => {
+const SkillSet: FC<{ skillSet: SkillSetModel }> = ({ skillSet }) => {
+  const { skillPercentage, skills } = skillSet;
+
   return (
     <SkillSetContainer>
-      <p>Skill Set 1</p>
+      <p>{skills}</p>
       <SkillLevel>
-        <div style={{ width: `40%` }} className='level'></div>
+        <div style={{ width: `${skillPercentage}%` }} className='level'></div>
       </SkillLevel>
     </SkillSetContainer>
   );

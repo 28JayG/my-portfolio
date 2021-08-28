@@ -10,15 +10,18 @@ export const ResumeIcon = styled.a.attrs((props) => ({
   color: white;
   position: fixed;
   bottom: 25px;
-  left: 48px;
+  left: 25px;
   z-index: 0;
+  background-color: white;
+  padding: 5px;
 
-  @media screen and (max-width: 1024px) {
-    left: 25px;
+  @media screen and (min-width: 1025px) {
+    background-color: transparent;
+    padding: 0;
   }
 
-  @media screen and (max-width: 1439px) {
-    left: 30px;
+  @media screen and (min-width: 1440px) {
+    left: 48px;
   }
 
   .tool-tip {

@@ -3,7 +3,7 @@ import { appColors } from '../../constants/colors';
 
 export const BlogsContainer = styled.div`
   width: 100%;
-  background-color: ${appColors.darkYellow};
+  /* background-color: ${appColors.darkYellow}; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +13,14 @@ export const BlogsContainer = styled.div`
     position: sticky;
     top: 0;
     z-index: 999;
-    background-color: ${appColors.darkYellow};
+    background-color: ${appColors.hoverBlue};
+    /* background-color: ${appColors.darkYellow}; */
     text-align: center;
     width: 100%;
-
+    
     @media screen and (min-width: 1025px) {
+      display: block;
+      background-color: ${appColors.darkYellow};
       text-align: left;
     }
   }
