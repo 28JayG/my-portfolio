@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { firestore } from '../../firebase/firebase.config';
 
 import { SkillSetModel } from '../../models/skillset.model';
 

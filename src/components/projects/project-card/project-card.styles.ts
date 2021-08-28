@@ -60,9 +60,10 @@ export const PCDetails = styled.div`
     margin: 0;
     margin-bottom: 5px;
   }
-
+  
   .pc-summary {
     background-color: transparent;
+    white-space: normal;
     padding: 0;
     margin: 0;
     ${body_2};

@@ -27,6 +27,7 @@ export const StaticColumn = styled.div`
   width: 100%;
   height: auto;
   padding-left: 0;
+  z-index: 3;
 
   .nav-column {
     flex-grow: 1;
@@ -51,6 +52,7 @@ export const StaticColumn = styled.div`
 
 export const Routes = styled.div`
   flex-basis: 50%;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   padding-top: 93px;

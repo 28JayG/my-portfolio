@@ -1,7 +1,7 @@
 export interface ProjectModel {
-    title: string;
-    imageUrl: string;
-    summary: string;
-    projectLink: string;
-  }
-  
+  id?: string;
+  title: string;
+  imageUrl: string;
+  summary: string;
+  projectLink: string;
+}

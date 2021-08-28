@@ -1,3 +1,4 @@
+import { ProjectModel } from '../../../models/project.model';
 import {
   PCDetails,
   PCImage,
@@ -7,21 +8,23 @@ import {
 interface PCProps {
   width: any;
   index: any;
-  data: any;
+  data: ProjectModel;
 }
 
 const ProjectCard: React.FC<PCProps> = ({ width, index, data }) => {
+  const { imageUrl, title, projectLink, summary } = data;
+
   return (
-    <ProjectCardContainer tall={index === 1}>
-      <PCImage />
-      <PCDetails>
-        <h4 className='pc-title'>...</h4>
-        <p className='pc-summary'>
-          Some thing ABOUT WEBSITESome thing ABOUT WEBSITESome thing ABOUT
-          WEBSITE
-        </p>
-      </PCDetails>
-    </ProjectCardContainer>
+    <a href={projectLink} target='_blank' rel='noreferrer'>
+      {' '}
+      <ProjectCardContainer tall={index === 1}>
+        <PCImage imageUrl={imageUrl} />
+        <PCDetails>
+          <h4 className='pc-title'>{title}</h4>
+          <p className='pc-summary'>{summary}</p>
+        </PCDetails>
+      </ProjectCardContainer>
+    </a>
   );
 };
 
